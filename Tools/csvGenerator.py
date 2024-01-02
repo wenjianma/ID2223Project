@@ -21,11 +21,11 @@ def generate_csv(symbol):
         # gold_data = gold_data[::-1]
 
         # Reset the index and create a new 'Index' column
-        target_data.reset_index(inplace=True)
-        target_data['Index'] = target_data.index
+        # target_data.reset_index(inplace=True)
+        # target_data['Index'] = target_data.index
 
         # Create a new DataFrame with only 'Index' and 'Close' columns
-        target_df = target_data[['Index', 'Close']].copy()
+        target_df = target_data[['Close']].copy()
 
         csv_file_name = f'{symbol}.csv'
 
