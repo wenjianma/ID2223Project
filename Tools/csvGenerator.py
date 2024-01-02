@@ -41,5 +41,5 @@ def generate_csv(symbol):
 
 
 generate_csv("GC=F")
-generate_csv("^IXIC")
-generate_csv("BTC-USD")
+# generate_csv("^IXIC")
+# generate_csv("BTC-USD")
