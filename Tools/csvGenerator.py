@@ -25,12 +25,12 @@ def generate_csv(symbol):
         # target_data['Index'] = target_data.index
 
         # Create a new DataFrame with only 'Index' and 'Close' columns
-        # target_df = target_data[['Close']].copy()
+        target_df = target_data[['Date', 'Close']].copy()
 
         csv_file_name = f'{symbol}.csv'
 
         # Save the DataFrame to a CSV file
-        target_data.to_csv(csv_file_name, index=False)
+        target_df.to_csv(csv_file_name, index=False)
 
         df = pd.read_csv(csv_file_name)
 
@@ -41,5 +41,5 @@ def generate_csv(symbol):
 
 
 generate_csv("GC=F")
-# generate_csv("^IXIC")
-# generate_csv("BTC-USD")
+generate_csv("^IXIC")
+generate_csv("BTC-USD")
