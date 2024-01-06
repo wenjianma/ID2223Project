@@ -4,8 +4,7 @@ import pandas as pd
 
 
 def update_csv(symbol):
-    # today = datetime.datetime.now()
-    today = datetime.datetime(2024, 1, 2)
+    today = datetime.datetime.now()
 
     # Symbol on Yahoo Finance
     target_symbol = symbol
@@ -15,6 +14,7 @@ def update_csv(symbol):
         target_data = yf.download(target_symbol, start=today, end=None)
         target_data.reset_index(inplace=True)
         target_data['Date'] = target_data['Date'].dt.strftime('%Y-%m-%d')
+        target_data = target_data[['Date', 'Close']]
         print(target_data)
     except Exception as e:
         target_data = pd.DataFrame()
