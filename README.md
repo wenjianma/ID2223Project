@@ -14,3 +14,5 @@ We use the LSTM algorithm to make predictions about the price of bank interest r
 1. Order is significant because of version control. We need to do data crawling/data updating first, then training, then inferencing.
 2. The whole framework is very similar to Lab 1 -- wine prediction.
 
+https://stackoverflow.com/questions/69906416/forecast-future-values-with-lstm-in-python/69912334#69912334
+
