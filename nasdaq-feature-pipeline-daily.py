@@ -17,7 +17,7 @@ if LOCAL == False:
 
 def get_daily_update():
     # the symbol for nasdaq
-    symbol = "GC=F"
+    symbol = "^IXIC"
 
     today = datetime.datetime.now().strftime('%Y-%m-%d')
     # Symbol on Yahoo Finance

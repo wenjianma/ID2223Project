@@ -17,7 +17,7 @@ if LOCAL == False:
 
 def get_daily_update():
     # the symbol for bitcoin
-    symbol = "GC=F"
+    symbol = "BTC-USD"
 
     today = datetime.datetime.now().strftime('%Y-%m-%d')
     # Symbol on Yahoo Finance
