@@ -1,0 +1,9 @@
+# ignore ALL .log files
+*.log
+
+# ignore ALL files in ANY directory named temp
+.ipynb_checkpoints/
+gold_model/
+
+GC=F_test.csv
+gold-daily-training-pipeline.py
