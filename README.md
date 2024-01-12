@@ -18,7 +18,7 @@ To meet the requirement of the course project, we need to:
 
 **LSTM**: Train and predict on time series data
 
-**Hopsworks**: Manage and store features and models
+**Hopsworks**: Manage and store features and model registry
 
 **Modal**: Periodically execute the program to update remote features and models
 
