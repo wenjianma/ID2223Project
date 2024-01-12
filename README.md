@@ -31,7 +31,9 @@ To meet the requirement of the course project, we need to:
 
 First, we use yfinance to implement a tool for crawling Yahoo Finance historical data. We create DataFrames from historical data and create feature groups on Hopsworks through ***backfill-feature-group***.
 
-Second, we retrieve historical features from Hopsworks and train the first-generation models using LSTM and upload the models to Hopsworks file system through ***training-pipeline***.
+Second, we retrieve historical features from Hopsworks and train the first-generation models using LSTM and upload the models to Hopsworks file system through ***training-pipeline***. Here is the gold example of our model, this picture shows that the predictions is relatively accurate.
+
+![output](README.assets/output.png)
 
 Then we deploy ***feature-pipeline-daily*** on Modal to update the latest data to Hopsworks every working day. We also realize that, if there is a sufficient amount of new daily data, to avoid Concept Drift, it is necessary to retrain the model. That's why we have ***cyclical-training-pipeline*** to generate and update new models every month.
 
@@ -47,7 +49,7 @@ Finally, we infer and display prediction results by using Gradio app deployed on
 
 ## Gradio app
 
-
+[Investment Predictor System](https://huggingface.co/spaces/Wenjian12581/investment_predictor)
 
 ## Contributors
 
